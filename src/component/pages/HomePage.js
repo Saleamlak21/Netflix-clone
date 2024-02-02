@@ -1,9 +1,12 @@
 import React from "react";
+// import Banner
 import Main from "../MainBanner";
-
+// import RowList
 import RowList from "../RowList";
+// import requests
 import requests from "../Requests";
 
+// create a function to display the home page
 function Home() {
   return (
     <div>
@@ -17,5 +20,5 @@ function Home() {
     </div>
   );
 }
-
+// export the function
 export default Home;

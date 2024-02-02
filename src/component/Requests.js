@@ -1,5 +1,6 @@
 const api_key = "af349256790790763b8b4da6e95944db";
 
+//create an object to store the list of movies
 const requests = {
   action: `https://api.themoviedb.org/3/discover/movie?api_key=${api_key}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&primary_release_date.gte=2020-01-01&primary_release_date.lte=2020-01-31&with_genres=28`,
   kidsFamily: `https://api.themoviedb.org/3/discover/movie?api_key=${api_key}&with_genres=10751`,
@@ -9,5 +10,5 @@ const requests = {
   tvShows: `https://api.themoviedb.org/3/tv/popular?api_key=${api_key}`,
   documentaries: `https://api.themoviedb.org/3/discover/movie?api_key=${api_key}&with_genres=99`,
 };
-
+//export the object
 export default requests;
